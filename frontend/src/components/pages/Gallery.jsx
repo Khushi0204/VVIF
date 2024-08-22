@@ -1,6 +1,27 @@
 import React from 'react';
-// import { MDBLightbox } from 'mdb-react-ui-kit';
-// import { MDBMultiCarousel, MDBMultiCarouselItem } from 'mdb-react-multi-carousel';
+import one from "../../assets/Gallery/1.jpg"
+import two from "../../assets/Gallery/2.jpg"
+import three from "../../assets/Gallery/3.jpg"
+import four from "../../assets/Gallery/4.jpg"
+import five from "../../assets/Gallery/5.jpg"
+import six from "../../assets/Gallery/6.jpg"
+import seven from "../../assets/Gallery/7.jpg"
+import eight from "../../assets/Gallery/8.jpg"
+import nine from "../../assets/Gallery/9.jpg"
+import ten from "../../assets/Gallery/10.jpg"
+import eleven from "../../assets/Gallery/11.jpg"
+import twelve from "../../assets/Gallery/12.jpg"
+import thirteen from "../../assets/Gallery/13.jpg"
+import fourteen from "../../assets/Gallery/14.jpg"
+import fifteen from "../../assets/Gallery/15.jpg"
+import sixteen from "../../assets/Gallery/16.jpg"
+import seventeen from "../../assets/Gallery/17.jpg"
+import eighteen from "../../assets/Gallery/18.jpg"
+import nineteen from "../../assets/Gallery/19.jpg"
+import twenty from "../../assets/Gallery/20.jpg"
+
+
+
 
 import {
   MDBContainer,
@@ -15,29 +36,29 @@ export default function App() {
     <div>
       <Header/>
     <MDBRow className='p-5'>
-      <MDBCol lg={4} md={12} className='mb-4 mb-lg-0 '>
+      <MDBRow lg={4} md={12} className='mb-4 mb-lg-0 '>
         <img
-          src='https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp'
+          src={one}
           className='w-100 shadow-1-strong rounded mb-4'
           alt='Boat on Calm Water'
         />
 
         <img
-          src='https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain1.webp'
+          src={four}
           className='w-100 shadow-1-strong rounded mb-4'
           alt='Wintry Mountain Landscape'
         />
-      </MDBCol>
+      </MDBRow>
 
       <MDBCol lg={4} className='mb-4 mb-lg-0'>
         <img
-          src='https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain2.webp'
+          src={three}
           className='w-100 shadow-1-strong rounded mb-4'
           alt='Mountains in the Clouds'
         />
 
         <img
-          src='https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp'
+          src={two}
           className='w-100 shadow-1-strong rounded mb-4'
           alt='Boat on Calm Water'
         />
@@ -45,13 +66,13 @@ export default function App() {
 
       <MDBCol lg={4} className='mb-4 mb-lg-0'>
         <img
-          src='https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(18).webp'
+          src={five}
           className='w-100 shadow-1-strong rounded mb-4'
           alt='Waves at Sea'
         />
 
         <img
-          src='https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain3.webp'
+          src={six}
           className='w-100 shadow-1-strong rounded mb-4'
           alt='Yosemite National Park'
         />
@@ -59,13 +80,13 @@ export default function App() {
 
       <MDBCol lg={4} md={12} className='mb-4 mb-lg-0 '>
         <img
-          src='https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp'
+          src={seven}
           className='w-100 shadow-1-strong rounded mb-4'
           alt='Boat on Calm Water'
         />
 
         <img
-          src='https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain1.webp'
+          src={eight}
           className='w-100 shadow-1-strong rounded mb-4'
           alt='Wintry Mountain Landscape'
         />
@@ -73,60 +94,83 @@ export default function App() {
 
       <MDBCol lg={4} className='mb-4 mb-lg-0'>
         <img
-          src='https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain2.webp'
+          src={nine}
           className='w-100 shadow-1-strong rounded mb-4'
           alt='Mountains in the Clouds'
         />
 
         <img
-          src='https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp'
+          src={ten}
           className='w-100 shadow-1-strong rounded mb-4'
           alt='Boat on Calm Water'
         />
       </MDBCol>
-
+      <MDBCol lg={4} className='mb-4 mb-lg-0'> <img
+          src={thirteen}
+          className='w-100 shadow-1-strong rounded mb-4'
+          alt='Yosemite National Park'
+        />
+         <img
+          src={fourteen}
+          className='w-100 shadow-1-strong rounded mb-4'
+          alt='Yosemite National Park'
+        />
+        </MDBCol>
+      
+     
       <MDBCol lg={4} className='mb-4 mb-lg-0'>
         <img
-          src='https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(18).webp'
+          src={eleven}
           className='w-100 shadow-1-strong rounded mb-4'
           alt='Waves at Sea'
         />
 
         <img
-          src='https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain3.webp'
+          src={twelve}
+          className='w-100 shadow-1-strong rounded mb-4'
+          alt='Yosemite National Park'
+        /></MDBCol>
+        <MDBCol lg={4} className='mb-4 mb-lg-0'>
+         <img
+          src={fifteen}
           className='w-100 shadow-1-strong rounded mb-4'
           alt='Yosemite National Park'
         />
-      </MDBCol>
+         <img
+          src={sixteen}
+          className='w-100 shadow-1-strong rounded mb-4'
+          alt='Yosemite National Park'
+        /></MDBCol>
+         <MDBCol lg={4} className='mb-4 mb-lg-0'>
+          <img
+          src={seventeen}
+          className='w-100 shadow-1-strong rounded mb-4'
+          alt='Yosemite National Park'
+        />
+         <img
+          src={eighteen}
+          className='w-100 shadow-1-strong rounded mb-4'
+          alt='Yosemite National Park'
+        />
+        </MDBCol>
+        <MDBCol lg={4} className='mb-4 mb-lg-0'>
+         <img
+          src={nineteen}
+          className='w-100 shadow-1-strong rounded mb-4'
+          alt='Yosemite National Park'
+        />
+         <img
+          src={twenty}
+          className='w-100 shadow-1-strong rounded mb-4'
+          alt='Yosemite National Park'
+        /></MDBCol>
+        
+
+      
     </MDBRow>
    
 
-{/* 
-    <MDBLightbox>
-      <MDBMultiCarousel lightbox>
-        <MDBMultiCarouselItem
-          src='https://mdbcdn.b-cdn.net/img/Photos/Thumbnails/Slides/1.webp'
-          fullscreenSrc='https://mdbcdn.b-cdn.net/img/Photos/Slides/1.webp'
-          alt='Table Full of Spices'
-        />
-        <MDBMultiCarouselItem
-          src='https://mdbcdn.b-cdn.net/img/Photos/Thumbnails/Slides/2.webp'
-          fullscreenSrc='https://mdbcdn.b-cdn.net/img/Photos/Slides/2.webp'
-          alt='Winter Landscape'
-        />
-        <MDBMultiCarouselItem
-          src='https://mdbcdn.b-cdn.net/img/Photos/Thumbnails/Slides/3.webp'
-          fullscreenSrc='https://mdbcdn.b-cdn.net/img/Photos/Slides/3.webp'
-          alt='View of the City in the Mountains'
-        />
-        <MDBMultiCarouselItem
-          src='https://mdbcdn.b-cdn.net/img/Photos/Thumbnails/Slides/4.webp'
-          fullscreenSrc='https://mdbcdn.b-cdn.net/img/Photos/Slides/4.webp'
-          alt='Place Royale Bruxelles'
-        />
-      </MDBMultiCarousel>
-    </MDBLightbox> */}
-  
+
     <Footer/>
     </div>
   );
