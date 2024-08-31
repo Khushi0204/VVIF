@@ -12,7 +12,7 @@ export default function Widget() {
                   <p className="text-sm text-primary-foreground">Reach out to us for any inquiries</p>
               </div>
               <div className="p-6">
-                  <form>
+                  <form action="https://formspree.io/f/mqaznglo" method="post">
                       <div className="mb-4">
                           <label htmlFor="name" className="block text-sm font-medium text-primary-foreground">Your Name</label>
                           <input type="text" id="name" name="name" placeholder="Enter Your Name" className="w-full px-3 py-2 mt-1 text-primary-foreground placeholder-primary-foreground bg-input border border-dark rounded-md focus:outline-none focus:ring focus:ring-primary" required></input>

@@ -4,18 +4,57 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Logo2 from "../../assets/logo2.png"; // Tell webpack this JS file uses this image
 import b from "../../assets/vbp.jpg"; // Tell webpack this JS file uses this image
+import { useAuth0 } from "@auth0/auth0-react";
 
 
 // console.log(logo); // /logo.84287d09.png
 
 function Header() {
+  const { loginWithRedirect, logout, isAuthenticated, user} = useAuth0();
   return (
     <div>
       <div
         style={{ borderRadius: "15px" }}
         className="m-0 p-0  bg-orange-400 rounded-lg shadow-lg h-10"
       >
-        
+        <Navbar
+          style={{ borderRadius: "15px" }}
+          data-bs-theme="dark"
+          className="m-0 p-0 float-right"
+        >
+          <Container className=" float-end">
+            <Nav >
+              {
+                isAuthenticated && (
+                  <div  className=" w-[400px] flex m-0 items-start justify-center  " >
+
+                    <img src={user.picture} alt={user.name} className="h-8 w-7 block my-auto"/>
+                    <h2 className="block w-fit my-auto ml-1">welcome, <a href="/Dashboard">{user.name}</a></h2>
+                  </div>
+                )
+              }
+              {isAuthenticated ? (
+                <Nav.Link
+                  onClick={() =>
+                    logout({
+                      logoutParams: { returnTo: window.location.origin },
+                    })
+                  }
+                  className=" font-bold px-3 "
+                >
+                  Logout
+                </Nav.Link>
+              ) : (
+                <Nav.Link
+                  onClick={() => loginWithRedirect()}
+                  className=" font-bold px-3"
+                >
+                  Login/Sign up
+                </Nav.Link>
+              )}
+            </Nav>
+          </Container>
+        </Navbar>
       </div>
 
       {/* // Import result is the URL of your image */}
@@ -57,9 +96,8 @@ function Header() {
         className="m-0 p-0"
       >
         <Container>
-          
           <Nav className="mx-auto ">
-          <Nav.Link href="/" className=" font-bold px-3">
+            <Nav.Link href="/" className=" font-bold px-3">
               Home
             </Nav.Link>
             <Nav.Link href="/About" className="font-bold px-3">
@@ -74,26 +112,18 @@ function Header() {
             <Nav.Link href="/Contact" className="font-bold px-3">
               Contact Us
             </Nav.Link>
-           
-            
-            <Nav.Link href="/Login" className=" font-bold px-3">
-              Login
-            </Nav.Link>
-            <Nav.Link href="/Register" className="font-bold px-3">
-              Register
-            </Nav.Link>
+
             <Nav.Link href="/Founder" className="font-bold px-3">
               Founder Desk
             </Nav.Link>
-           
+
             <Nav.Link href="/Testimonial" className="font-bold px-3">
               Testimonial
             </Nav.Link>
-            
+
             <Nav.Link href="/Servey" className="font-bold px-3">
               Online Survey
             </Nav.Link>
-            
           </Nav>
         </Container>
       </Navbar>

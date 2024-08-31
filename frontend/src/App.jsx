@@ -6,11 +6,15 @@ import Login from "./components/pages/Login";
 import Gallery from "./components/pages/Gallery";
 import Founder from "./components/pages/Founder";
 import Servey from "./components/pages/Servey";
+import Dashboard from "./components/pages/Dashboard"
+import Membership from "./components/pages/Membership"
 import Testimonial from "./components/pages/Testimonial";
 import PrabhuMahima from "./components/pages/PrabhuMahima";
+import { Auth0Provider } from '@auth0/auth0-react';
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Register from "./components/pages/Register";
+// import Certificate from "./components/Generate/Certificate";
 
 const App = () => {
   const router = createBrowserRouter([
@@ -53,6 +57,14 @@ const App = () => {
     {
       path: "/Testimonial",
       element: <Testimonial />,
+    },
+    {
+      path: "/Dashboard",
+      element: <Dashboard />,
+    },
+    {
+      path: "/Membership",
+      element: <Membership />,
     },
   ]);
 

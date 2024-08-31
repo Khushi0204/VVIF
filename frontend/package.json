@@ -10,7 +10,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@auth0/auth0-react": "^2.2.4",
+    "@iconscout/react-unicons": "^2.0.2",
     "bootstrap": "^5.3.3",
+    "fabric": "^6.4.0",
+    "html2canvas": "^1.4.1",
+    "jspdf": "^2.5.1",
     "mdb-react-ui-kit": "^8.0.0",
     "react": "^18.3.1",
     "react-bootstrap": "^2.10.4",
