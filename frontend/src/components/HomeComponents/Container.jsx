@@ -14,17 +14,21 @@ const Container = ({ title, description, fullDescription }) => {
   };
 
   return (
-    <div style={{ marginBottom: '20px', padding: '10px', border: '1px solid #ddd' }}>
-      <h2>{title}</h2>
-      <p>{isExpanded ? fullDescription : description}</p>
-      {isExpanded && (
-        <pre style={{ whiteSpace: 'pre-wrap', fontFamily: 'inherit' }}>
+    <div style={{ marginBottom: '20px', padding: '10px', border: '1px solid #ddd',textAlign: 'center',  }}>
+      <h2 className='text-3xl text-red-500 mx-auto w-fit m-2'>{title}</h2>
+      <p>{isExpanded ? <pre  style={{
+            whiteSpace: 'pre-wrap',     // Preserve line breaks
+            fontFamily: 'inherit',      // Use inherited font-family
+            textAlign: 'center', 
+            justifyContent:'center',       // Center align the text
+            fontSize: '20px',           // Set the text size
+            color: '#333',              // Set the text color (optional)
+            lineHeight: '2',
+            wordSpacing:'5px',          // Set line height (optional)
+          }}>
           {fullDescription}
-        </pre>
-      )}
-      {/* <button onClick={handleReadMore}>
-        {isExpanded ? 'Read Less' : 'Read More'}
-      </button> */}
+        </pre> : description}</p>
+      
       <button className={SHARED_CLASSES.button} onClick={handleReadMore}>
       {isExpanded ? 'Read Less' : 'Read More'}
       </button>

@@ -8,7 +8,7 @@ export default function Widget() {
       <Header />
       <div className="p-6 bg-card rounded-lg shadow-md">
         <h2 className="text-2xl font-bold mb-4">Online Survey</h2>
-        <form action="https://formspree.io/f/myzgobpr" method="post">
+        <form action="https://formspree.io/f/mkgwagqb" method="post">
           <fieldset className="mb-6">
             <legend className="text-lg font-semibold">Personal Details</legend>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">

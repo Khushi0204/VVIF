@@ -3,11 +3,13 @@ import poverty from "../../assets/poverty.jpeg";
 import health from "../../assets/health.jpg";
 import disaster from "../../assets/disaster.jpeg";
 import child from "../../assets/child.jpeg";
+import DonateNow from "../pages/DonateNow"
 import CL from "../../assets/CL.jpeg";
 import edu from "../../assets/education.jpg";
 import we from "../../assets/WE1.jpeg";
 import j from "../../assets/Justice.jpg";
 import bbbp from "../../assets/bbbp.jpeg"
+import rb from "../../assets/rb.jpeg"
 import chasma from "../../assets/chasma.png"
 
 import React from 'react'
@@ -49,10 +51,10 @@ const Missions = () => {
                     है।
                   </p>
                   <a
-                    href="#"
+                    href="/DonateNow"
                     className="bg-orange-400 text-accent-foreground hover:bg-accent/80 rounded-full px-6 py-3 mt-16 inline-block transition-colors duration-300"
                   >
-                    Learn More
+                    Donate
                   </a>
                 </div>
                 <div className="w-1/3 bg-card dark:bg-card-foreground rounded-lg p-6 shadow-md bg-white mt-3">
@@ -77,10 +79,10 @@ const Missions = () => {
                     बड़े शहरों में, ये हमले और भी आम हैं।
                   </p>
                   <a
-                    href="#"
+                    href="/DonateNow"
                     className="bg-orange-400 mt-3 inline-block text-accent-foreground hover:bg-orange-600/80 rounded-full px-6 py-3  transition-colors duration-300"
                   >
-                    Learn More
+                    Donate
                   </a>
                 </div>
                 <div className="w-1/3 bg-card  dark:bg-card-foreground rounded-lg p-6 shadow-md bg-white mt-3">
@@ -99,10 +101,10 @@ const Missions = () => {
                     तैयार रहते हैं।
                   </p>
                   <a
-                    href="#"
+                    href="/DonateNow"
                     className="bg-orange-400 mt-16 inline-block text-accent-foreground hover:bg-accent/80 rounded-full px-6 py-3  transition-colors duration-300"
                   >
-                    Learn More
+                    Donate
                   </a>
                 </div>
               </div>
@@ -127,10 +129,10 @@ const Missions = () => {
                     है। 
                   </p>
                   <a
-                    href="#"
+                    href="/DonateNow"
                     className="bg-orange-400 text-accent-foreground hover:bg-accent/80 rounded-full px-6 py-3 mt-16 inline-block transition-colors duration-300"
                   >
-                    Learn More
+                    Donate
                   </a>
                 </div>
                 <div className="w-1/3 bg-card dark:bg-card-foreground rounded-lg p-6 shadow-md bg-white mt-3">
@@ -154,10 +156,10 @@ const Missions = () => {
                     शोषण का समाधान करना।
                   </p>
                   <a
-                    href="#"
+                    href="/DonateNow"
                     className="bg-orange-400 mt-16 inline-block text-accent-foreground hover:bg-orange-600/80 rounded-full px-6 py-3  transition-colors duration-300"
                   >
-                    Learn More
+                    Donate
                   </a>
                 </div>
                 <div className="w-1/3 bg-card  dark:bg-card-foreground rounded-lg p-6 shadow-md bg-white mt-3">
@@ -183,10 +185,10 @@ const Missions = () => {
                     स्वास्थ्य शिविर आयोजित किए जाते हैं।
                   </p>
                   <a
-                    href="#"
+                    href="/DonateNow"
                     className="bg-orange-400 mt-6 inline-block text-accent-foreground hover:bg-accent/80 rounded-full px-6 py-3  transition-colors duration-300"
                   >
-                    Learn More
+                    Donate
                   </a>
                 </div>
               </div>
@@ -210,10 +212,10 @@ const Missions = () => {
                     और पहले से तैयार करने में मदद करते हैं।
                   </p>
                   <a
-                    href="#"
+                    href="/DonateNow"
                     className="bg-orange-400 text-accent-foreground hover:bg-accent/80 rounded-full px-6 py-3 mt-3 inline-block transition-colors duration-300"
                   >
-                    Learn More
+                    Donate
                   </a>
                 </div>
                 <div className="w-1/3 bg-card dark:bg-card-foreground rounded-lg p-6 shadow-md bg-white mt-3">
@@ -238,30 +240,32 @@ const Missions = () => {
                     जाता है। 
                   </p>
                   <a
-                    href="#"
+                    href="/DonateNow"
                     className="bg-orange-400 mt-8 inline-block text-accent-foreground hover:bg-orange-600/80 rounded-full px-6 py-3  transition-colors duration-300"
                   >
-                    Learn More
+                    Donate
                   </a>
                 </div>
-                <div className="w-1/3 bg-card  dark:bg-card-foreground rounded-lg p-6 shadow-md bg-white mt-3">
+                <div className="w-1/3 bg-card dark:bg-card-foreground rounded-lg p-6 shadow-md bg-white mt-3">
                   <img
-                    src={CL}
-                    alt="Project 9"
-                    className=" h-1/3 object-cover rounded-lg mb-4 mx-auto"
+                    src={rb}
+                    alt="Project 2"
+                    className=" h-70 object-cover rounded-lg mb-4 mx-auto"
                   />
-                  <h3 className="text-xl font-semibold mb-2">बाल श्रम</h3>
+                  <h3 className="text-xl font-semibold mb-2">
+                  रोटी बैंक
+                  </h3>
                   <p className="text-sm leading-relaxed">
-                  
-                  बाल श्रम एक गंभीर सामाजिक समस्या है जो कई विकासशील देशों में व्यापक रूप से फैली हुई है। इसमें बच्चों को उनके बचपन से वंचित करके उन्हें श्रम करने के लिए मजबूर किया जाता है। गरीबी, अशिक्षा, और सामाजिक असमानता इसके मुख्य कारण हैं। कई बच्चे कठोर और असुरक्षित परिस्थितियों में काम करने के लिए मजबूर होते हैं, जिससे उनका शारीरिक और मानसिक विकास प्रभावित होता है।  समाज में जागरूकता और ठोस कदम उठाने की आवश्यकता है ताकि हर बच्चे को शिक्षा और एक सुरक्षित बचपन मिल सके।
+                  हमारी संस्था, विश्वकर्मा वंशज इंटरनेशनल फेडरेशन, 'रोटी बैंक' के माध्यम से भूखे और जरूरतमंद लोगों तक भोजन पहुँचाने का कार्य कर रही है। हमारा उद्देश्य यह सुनिश्चित करना है कि कोई भी व्यक्ति भूखा न सोए। इस प्रयास को सफल बनाने के लिए हम आपके सहयोग की आवश्यकता है। आप भी इस महान कार्य में योगदान देकर समाज की सेवा कर सकते हैं। आपका छोटा सा योगदान किसी की भूख मिटाकर उसे नई उम्मीद और जीवन की दिशा दे सकता है। आइए, हमारे साथ जुड़ें और इस पुण्य कार्य में अपना अमूल्य सहयोग प्रदान करें।
                   </p>
                   <a
-                    href="#"
-                    className="bg-orange-400 mt-14 inline-block text-accent-foreground hover:bg-accent/80 rounded-full px-6 py-3  transition-colors duration-300"
+                    href="/DonateNow"
+                    className="bg-orange-400 mt-3 inline-block text-accent-foreground hover:bg-orange-600/80 rounded-full px-6 py-3  transition-colors duration-300"
                   >
-                    Learn More
+                    Donate
                   </a>
                 </div>
+                
               </div>
             </div>
           </section>

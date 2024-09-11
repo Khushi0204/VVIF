@@ -38,13 +38,28 @@ export default function Footer() {
               </a>
             </li>
             <li>
-              <a href="/Projects" className="hover:underline">
-                Projects
+              <a href="/Gallery" className="hover:underline">
+                Gallery
               </a>
             </li>
             <li>
-              <a href="/Contacts" className="hover:underline">
-                Contact
+              <a href="/Contact" className="hover:underline">
+                Contact Us
+              </a>
+            </li>
+            <li>
+              <a href="/Founder" className="hover:underline">
+                Founder Desk
+              </a>
+            </li>
+            <li>
+              <a href="/Business_Promotions" className="hover:underline">
+              Business Promotions
+              </a>
+            </li>
+            <li>
+              <a href="/Servey" className="hover:underline">
+               Online Servey
               </a>
             </li>
           </ul>

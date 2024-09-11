@@ -1,10 +1,11 @@
 import React from 'react';
+import br from '../../assets/pdfs/puraan.pdf'
 
 const DOWNLOAD_BUTTON_CLASSES = 'bg-orange-300 hover:bg-green-500 text-primary-foreground p-3 rounded-md shadow-md hover:bg-primary/80';
 
 const pdf = () => {
   const handleDownload = () => {
-    const pdfPath = 'path/to/pdf/file.pdf';
+    const pdfPath = br;
 
     fetch(pdfPath)
       .then(response => response.blob())

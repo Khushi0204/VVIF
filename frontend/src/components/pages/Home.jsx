@@ -7,6 +7,7 @@ import vip from "../../assets/vip.jpg";
 import map from "../../assets/map.jpeg";
 import Mission from "../HomeComponents/Missions"
 import "bootstrap/dist/css/bootstrap.min.css";
+import Slider2 from "../HomeComponents/Slider2"
 
 const Home = () => {
   return (
@@ -78,7 +79,7 @@ const Home = () => {
             </div>
           </section>
         </main>
-
+            <Slider2/>
         <Footer />
       </div>
     </>

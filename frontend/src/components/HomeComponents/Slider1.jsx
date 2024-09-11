@@ -1,48 +1,80 @@
-import bhgwan from "../../assets/bhgwan.jpeg"
-import e from "../../assets/2.jpeg"
-import c from "../../assets/7.jpeg"
-import d from "../../assets/1.jpeg"
-import b from "../../assets/b2.jpeg"
-import yantra from "../../assets/yantra.jpeg"
+import bhgwan from "../../assets/bhgwan.jpeg";
+import e from "../../assets/2.jpeg";
+import c from "../../assets/7.jpeg";
+import d from "../../assets/1.jpeg";
+import b from "../../assets/b2.jpeg";
+import yantra from "../../assets/yantra.jpeg";
 
-export default function Slider() {
-    return (
-        <div className="h-fit flex items-center justify-center bg-gradient-to-r from-orange-400 to-white-400 to-green-300 mx-2 mt-2">
-            <div className="w-full max-w-md p-6 bg-card shadow-lg rounded-lg overflow-hidden">
-                <div className="h-80 overflow-y-auto">
-                    <p className="text-3xl font-bold text-primary-foreground mb-4 text-center">Photos</p>
-                    <ul className="divide-y divide-zinc-300">
-                        <li className="py-2 hover:bg-secondary rounded transition duration-200 flex items-start">
-                            <img undefinedhidden="true" alt="event-icon" src={bhgwan} className="mr-3 " />
-                            
-                        </li>
-                        <li className="py-4 hover:bg-secondary rounded transition duration-200 flex items-start">
-                            <img undefinedhidden="true" alt="event-icon" src={b} className="mr-3 " />
-                            
-                        </li>
-                        <li className="py-4 hover:bg-secondary rounded transition duration-200 flex items-start">
-                            <img undefinedhidden="true" alt="event-icon" src={c} className="mr-3" />
-                           
-                        </li>
-                        <li className="py-4 hover:bg-secondary rounded transition duration-200 flex items-start">
-                            <img undefinedhidden="true" alt="event-icon" src={d} className="mr-3" />
-                            
-                        </li>
-                        <li className="py-4 hover:bg-secondary rounded transition duration-200 flex items-start">
-                            <img undefinedhidden="true" alt="event-icon" src={e} className="mr-3" />
-                            
-                                
-                        </li>
-                        <li className="py-4 hover:bg-secondary rounded transition duration-200 flex items-start">
-                            <img undefinedhidden="true" alt="event-icon" src={yantra} className="mr-3" />
-                                                            
-                        </li>
-                        
-                    </ul>
-                </div>
-            </div>
-        </div>
-        
-        
-    )
-}
+import React, { useEffect, useRef } from "react";
+
+const VerticalScroller = () => {
+  const scrollerRef = useRef(null);
+
+  useEffect(() => {
+    const scroller = scrollerRef.current;
+    
+    let scrollAmount = 0;
+
+    const scrollStep = () => {
+      scrollAmount += 1;  // Adjust the scroll step for smoother, noticeable movement
+      scroller.scrollTop = scrollAmount;
+
+      // If the scroller reaches the bottom, reset the scroll position back to the top
+      if (scroller.scrollTop >= scroller.scrollHeight - scroller.clientHeight) {
+        scrollAmount = 0; // Reset scroll amount to simulate infinite scrolling
+      }
+    };
+
+    const scrollInterval = setInterval(scrollStep, 50); // Increased delay for slower speed
+
+    return () => clearInterval(scrollInterval); // Cleanup on unmount
+  }, []);
+
+  const images = [
+    bhgwan,
+    b, 
+    d, 
+    e,
+    yantra,
+    c
+  ];
+
+  return (
+    <div className="scroller-container" ref={scrollerRef}>
+      <div className="scroller-content">
+        {images.concat(images).map((img, index) => (
+          <img key={index} src={img} alt={`img-${index}`} />
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default VerticalScroller;
+
+// CSS (Inside the same file)
+const style = `
+  .scroller-container {
+    height: 400px; /* Adjust height as needed */
+    width: 300px; /* Adjust width as needed */
+    overflow: hidden;
+    position: relative;
+  }
+
+  .scroller-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .scroller-content img {
+    width: 100%;
+    margin: 10px 0;
+  }
+`;
+
+// Insert styles into the document head dynamically
+const styleSheet = document.createElement("style");
+styleSheet.type = "text/css";
+styleSheet.innerText = style;
+document.head.appendChild(styleSheet);
+
