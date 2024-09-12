@@ -93,7 +93,7 @@ const ContactUs = () => {
 
       <div className="contact-right">
         {/* Your existing contact form */}
-        <form action="https://formspree.io/f/meojworo" method="post" netlify>
+        <form action="https://formspree.io/f/meojworo" method="post" data-netlify="true">
           <div>
             <label>Name:</label>
             <input type="text" id="name" name="name" placeholder="Enter Your Name" />
