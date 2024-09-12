@@ -106,6 +106,7 @@ const ContactUs = () => {
             <label>Message:</label>
             <textarea id="message" name="message" rows="4" placeholder="How can we help you?"></textarea>
           </div>
+          <div data-netlify-recaptcha="true"></div>
           <button type="submit">Submit</button>
         </form>
       </div>
