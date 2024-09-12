@@ -30,7 +30,7 @@ app.use(express.json());
 app.use(methodOverride('_method'));
 
 app.use(cors({
-  origin: 'http://localhost:5173',  // Replace with your frontend's URL
+  origin: 'http://vishwakarmavansajfederation.com',  // Replace with your frontend's URL
 }));
 app.use(bodyParser.json());
 

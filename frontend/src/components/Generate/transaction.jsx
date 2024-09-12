@@ -10,7 +10,7 @@ function transaction() {
   }
   const HandleClick = async() => {
     try {
-      await axios.post('http://localhost:5173/transaction', data).then(res =>{
+      await axios.post('http://vishwakarmavansajfederation.com/transaction', data).then(res =>{
       console.log(res.data)
       }).catch(err=>{
       console.log(err)
