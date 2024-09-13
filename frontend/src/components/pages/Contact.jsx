@@ -92,8 +92,8 @@ const ContactUs = () => {
       </div>
 
       <div className="contact-right">
-        {/*  action="https://formspree.io/f/meojworo"} */}
-        <form  method="post" data-netlify="true">
+        {/* Your existing contact form */}
+        <form action="https://formspree.io/f/meojworo" method="post" >
           <div>
             <label>Name:</label>
             <input type="text" id="name" name="name" placeholder="Enter Your Name" />
@@ -106,7 +106,6 @@ const ContactUs = () => {
             <label>Message:</label>
             <textarea id="message" name="message" rows="4" placeholder="How can we help you?"></textarea>
           </div>
-          <div data-netlify-recaptcha="true"></div>
           <button type="submit">Submit</button>
         </form>
       </div>
