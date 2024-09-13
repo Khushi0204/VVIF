@@ -21,23 +21,22 @@ export default function Widget() {
             <div className="mt-4 space-y-4">
               <div className="border-b border-muted p-2">
                 <h3 className="font-bold text-foreground">
-                  Keyfill Technologies
+                  Guardant Security
                 </h3>
                 <p className="text-muted-foreground">
-                  N118, Trade Tower 2, Alpha 1 Commercial Belt, Greater Noida -
-                  201301, Uttar Pradesh, India
+                Plot No. 18, First Floor Back Side, of Dharambir Plaza, Amberhai Ext., Sector No. 19, Dwarka, Delhi 110075
                 </p>
                 <p className="text-muted-foreground">
                   Email: keyfilltechnologies@gmail.com
                 </p>
-                <p className="text-muted-foreground">Phone: 9659059072</p>
+                <p className="text-muted-foreground">Phone: 9625785431</p>
                 <p className="text-muted-foreground">
                   Website:{" "}
                   <a
-                    href="http://www.keyfilltechnologies.com"
+                    href="http://guardantsecurity.com"
                     className="text-blue-500"
                   >
-                    www.keyfilltechnologies.com
+                    http://guardantsecurity.com
                   </a>
                 </p>
               </div>
@@ -99,7 +98,7 @@ export default function Widget() {
               </div>
             </div>
           </div>
-          <div>contact : vishwakarmafederation@gmail.com for promotion related Query</div>
+          <div>contact : vishwakarmavansajfederation@gmail.com for promotion related Query</div>
         </main>
       </div>
       <Footer />

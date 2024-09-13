@@ -1,7 +1,7 @@
 import React from 'react';
 import br from '../../assets/pdfs/Brochure.pdf'
 
-const DOWNLOAD_BUTTON_CLASSES = 'bg-orange-300 hover:bg-green-500 text-primary-foreground p-3 rounded-md shadow-md hover:bg-primary/80';
+const DOWNLOAD_BUTTON_CLASSES = 'bg-orange-300 hover:bg-green-500 text-primary-foreground p-3 rounded-md shadow-md hover:bg-primary/80 my-2';
 
 const pdf = () => {
   const handleDownload = () => {

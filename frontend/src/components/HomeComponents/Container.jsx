@@ -24,7 +24,8 @@ const Container = ({ title, description, fullDescription }) => {
             fontSize: '20px',           // Set the text size
             color: '#333',              // Set the text color (optional)
             lineHeight: '2',
-            wordSpacing:'5px',          // Set line height (optional)
+            wordSpacing:'5px', 
+            textAlign: 'center',         // Set line height (optional)
           }}>
           {fullDescription}
         </pre> : description}</p>
