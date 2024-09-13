@@ -18,8 +18,8 @@ const Missions = () => {
   return (
     <div>
       <section className="dark:bg-secondary-foreground rounded-lg shadow-lg py-12 bg-orange-200">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-3 md:grid-cols-3 gap-6">
+        <div className="container mx-auto px-2">
+          <div className="grid grid-cols-3  gap-2">
             <div className="flex justify-center">
               <img
                 src={chasma}

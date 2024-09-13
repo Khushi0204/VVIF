@@ -1,5 +1,5 @@
 import React from 'react';
-import br from '../../assets/pdfs/puraan.pdf'
+import br from '../../assets/pdfs/Brochure.pdf'
 
 const DOWNLOAD_BUTTON_CLASSES = 'bg-orange-300 hover:bg-green-500 text-primary-foreground p-3 rounded-md shadow-md hover:bg-primary/80';
 
@@ -13,7 +13,7 @@ const pdf = () => {
         const url = window.URL.createObjectURL(new Blob([blob]));
         const a = document.createElement('a');
         a.href = url;
-        a.download = 'downloaded-file.pdf';
+        a.download = 'Brochure_VVIF.pdf';
         document.body.appendChild(a);
         a.click();
         window.URL.revokeObjectURL(url);
