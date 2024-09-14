@@ -19,14 +19,15 @@ const Home = () => {
 
         <main className="bg-background dark:bg-foreground text-dark dark:text-primary-foreground   ">
         <div
-  className="grid grid-cols-1 md:grid-cols-3 gap-3 px-4 sm:px-6 lg:px-2" // Tailwind classes for grid layout
+  className="grid grid-cols-1 md:grid-cols-3 gap-3 px-4 sm:px-6 lg:px-2" // Responsive grid layout
 >
-  <div>
+  <div className="w-full md:w-auto"> {/* Ensure slider takes up full width on smaller screens */}
     <Slider />
   </div>
 
-  <div>
-    <section className="container py-4 w-full bg-card dark:bg-card-foreground rounded-lg p-0 shadow-md mx-auto">
+  {/* Middle section with slight width adjustment */}
+  <div className="md:w-full w-[95%] mx-auto"> {/* Ensure responsiveness by setting width to 95% on smaller screens */}
+    <section className="container py-4 w-full bg-card dark:bg-card-foreground rounded-lg p-0 shadow-md">
       <div className="gap-4">
         <div className="flex flex-col justify-center items-center">
           <h1 className="text-2xl sm:text-3xl md:text-4xl font-extrabold mb-1 text-red-500 text-center">
@@ -35,7 +36,7 @@ const Home = () => {
           <h1 className="text-xl sm:text-2xl md:text-3xl font-extrabold mb-3 text-red-500 text-center">
             में आपका स्वागत है
           </h1>
-          <p className="text-base sm:text-sm md:text-base text-center font-semibold">
+          <p className="text-sm sm:text-base md:text-base text-center font-semibold px-4">
             विश्वकर्मा वंसज इंटरनेशनल फेडरेशन एक सामाजिक एवं धार्मिक
             अंतरराष्ट्रीय संस्था है, जहाँ हम वृद्ध लोगों की मदद, चिकित्सा सहायता,
             क्लस्टर छात्रों के लिए शैक्षिक सहायता, महिला सशक्तिकरण, क्लस्टर क्षेत्र
@@ -55,10 +56,11 @@ const Home = () => {
     </section>
   </div>
 
-  <div>
+  <div className="w-full md:w-auto"> {/* Ensure slider takes up full width on smaller screens */}
     <Slider1 />
   </div>
 </div>
+ 
 
 
           <br />
