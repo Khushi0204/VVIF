@@ -28,7 +28,7 @@ export default function Widget() {
               </p>
               <p><strong>खाता संख्या:</strong> 58180100003682</p>
               <p><strong>IFSC कोड:</strong> BARB0LONIXX</p>
-              <p><strong>खाता धारक का नाम:</strong> Ambey  lal Sharma</p>
+              {/* <p><strong>खाता धारक का नाम:</strong> Ambey  lal Sharma</p> */}
             </div>
             <p className="text-muted-foreground text-center mt-4">
               आप बैंक विवरण का उपयोग करके सीधे दान स्थानांतरित कर सकते हैं।

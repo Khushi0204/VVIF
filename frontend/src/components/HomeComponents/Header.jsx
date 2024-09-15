@@ -27,27 +27,27 @@ function Header() {
 
       {/* Logo and Title */}
       
-      <div className="flex flex-col md:flex-row items-center justify-center my-4">
+      <div className="flex flex-row md:flex-row items-center justify-center my-4">
         <img
           src={Logo2}
           alt="Logo"
-          className="h-20 w-20  md:h-40  md:w-40 md:mx-0"
+          className="h-20 w-20  md:h-40  md:w-40 md:mx-0 mb-0"
           crossOrigin="anonymous"
         />
         <div className="text-center md:text-left md:mx-4 mt-4 md:mt-0">
-          <h1 className="text-2xl md:text-5xl text-red-600 font-bold">
+          <h1 className="text-xl md:text-5xl text-red-600 font-bold">
             विश्वकर्मा वंसज इंटरनेशनल फेडरेशन
           </h1>
-          <h2 className="text-red-600 text-xl md:text-2xl">
+          <h2 className="text-red-600 text-sm font-bold md:text-2xl">
             Vishwakarma Vansaj International Federation
           </h2>
-          <p className=" text-blue-800 font-extrabold text-xs md:text-base mb-2">
+          <p className=" text-blue-800 font-extrabold text-[8px] md:text-base mb-1">
             Registered: Under Section 8(1) (Ministry of Corporate Affairs, Govt. of India)
           </p>
-          <p className="md:text-base text-blue-800 font-extrabold text-xs mb-2">
+          <p className="md:text-base text-blue-800 font-extrabold text-[8px] mb-1">
             Registered: Niti Aayog (Govt. of India); An ISO certified 9001: 2015 Org.
           </p>
-          <p className="text-sm text-blue-900 font-extrabold md:text-lg">
+          <p className="text-[12px] text-blue-900 font-extrabold md:text-lg">
             एक सामाजिक एवं धार्मिक अंतरराष्ट्रीय संस्था
           </p>
         </div>

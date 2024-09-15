@@ -78,7 +78,7 @@ export default function Footer() {
             Loni, Ghaziabad(201102), Uttar Pradesh, India
           </p>
           
-          <p className="text-base font-semibold">
+          <p className="text-base font-semibold ">
             Email: vishwakarmavansajfederation@gmail.com
           </p>
           <p className="text-lg font-semibold">Contact: +91-8860430007    +91-9625785431</p>
@@ -144,7 +144,7 @@ export default function Footer() {
       <div className="bg-primary/90 text-primary-foreground text-black  my-1 py-2 text-center">
         <p className="text-lg font-bold">
           {" "}
-          All rights reserved for VVIF &copy; 2024 designed by Khushi Sharma
+          All rights reserved for VVIF &copy; 2024 designed by <a href="https://github.com/Khushi0204" className="text-white">Khushi Sharma</a>
         </p>
       </div>
     </footer>
