@@ -24,11 +24,11 @@ const Missions = () => {
               <img
                 src={chasma}
                 alt="Logo"
-                className="w-[70px] h-[70px] sm:w-[90px] sm:h-[90px]"
+                className="w-[50px] h-[50px] sm:w-[90px] sm:h-[90px]"
               />
             </div>
             <div className="text-center">
-              <h2 className="text-xl sm:text-2xl md:text-4xl font-bold mb-8">
+              <h2 className="text-l sm:text-2xl md:text-4xl font-bold mb-8">
                 विश्वकर्मा वंशज इंटरनेशनल फेडरेशन के सामाजिक कार्य
               </h2>
             </div>
@@ -37,7 +37,7 @@ const Missions = () => {
               <img
                 src={bbbp}
                 alt="Logo"
-                className="w-[70px] h-[70px] sm:w-[90px] sm:h-[90px]"
+                className="w-[50px] h-[50px] sm:w-[90px] sm:h-[90px]"
               />
             </div>
           </div>

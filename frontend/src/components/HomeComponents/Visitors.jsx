@@ -9,9 +9,9 @@ const HomePageWithNGOStatistics = () => {
     // Check and update visitor count from local storage
     const storedCount = localStorage.getItem('visitorCount');
     if (storedCount) {
-      setVisitors(parseInt(storedCount));
+      setVisitors(parseInt(100000));
     } else {
-      localStorage.setItem('visitorCount', 1);
+      localStorage.setItem('visitorCount', 5);
       setVisitors(1);
     }
 

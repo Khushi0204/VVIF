@@ -64,7 +64,7 @@ function Header() {
         <img
           src={b}
           alt="Logo"
-          className="w-20 h-20 md:h-28  md:w-28 lg:h-40  lg:w-40 ml-4 mt-4 md:mt-0"
+          className="w-20 h-20 md:h-28  md:w-28 lg:h-40  lg:w-40 ml-4 mt-0 md:mt-0"
         />
       </div>
 
