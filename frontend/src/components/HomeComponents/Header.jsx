@@ -45,7 +45,7 @@ function Header() {
           crossOrigin="anonymous"
         />
         <div className="text-center md:text-left md:mx-4 mt-4 md:mt-0">
-          <h1 className="text-xl md:text-3xl lg:text-5xl text-red-600 font-bold">
+          <h1 className="text-l md:text-3xl lg:text-5xl text-red-600 font-bold">
             विश्वकर्मा वंसज इंटरनेशनल फेडरेशन
           </h1>
           <h2 className="text-red-600 text-sm font-bold md:text-xl lg:text-2xl">
