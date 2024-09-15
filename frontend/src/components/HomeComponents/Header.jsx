@@ -41,20 +41,20 @@ function Header() {
         <img
           src={Logo2}
           alt="Logo"
-          className="h-20 w-20  md:h-28  md:w-28 lg:h-40  lg:w-40 md:mx-0 mb-0"
+          className="h-20 w-20  md:h-28  md:w-28 lg:h-40  lg:w-40 md:mx-0 mb-0 mr-2"
           crossOrigin="anonymous"
         />
         <div className="text-center md:text-left md:mx-4 mt-4 md:mt-0">
           <h1 className="text-l md:text-3xl lg:text-5xl text-red-600 font-bold">
             विश्वकर्मा वंसज इंटरनेशनल फेडरेशन
           </h1>
-          <h2 className="text-red-600 text-sm font-bold md:text-xl lg:text-2xl">
+          <h2 className="text-red-600 text-[12px] font-bold md:text-xl lg:text-2xl">
             Vishwakarma Vansaj International Federation
           </h2>
-          <p className=" text-blue-800 font-extrabold text-[8px] md:text-sm lg:text-base mb-1">
+          <p className=" text-blue-800 font-extrabold text-[4px] md:text-sm lg:text-base mb-1">
             Registered: Under Section 8(1) (Ministry of Corporate Affairs, Govt. of India)
           </p>
-          <p className="md:text-sm lg:text-base text-blue-800 font-extrabold text-[8px] mb-1">
+          <p className="md:text-sm lg:text-base text-blue-800 font-extrabold text-[4px] mb-1">
             Registered: Niti Aayog (Govt. of India); An ISO certified 9001: 2015 Org.
           </p>
           <p className="text-[12px] text-blue-900 font-extrabold md:text-lg">
