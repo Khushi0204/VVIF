@@ -3,6 +3,7 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Logo2 from "../../assets/logo2.png"; 
+import HB from "../../assets/HB.png"; 
 import b from "../../assets/vbp.jpg"; 
 import { useAuth0 } from "@auth0/auth0-react";
 
@@ -27,24 +28,33 @@ function Header() {
 
       {/* Logo and Title */}
       
-      <div className="flex flex-row md:flex-row items-center justify-center my-4">
+      <div className="flex flex-row md:flex-row items-center justify-center my-2">
+      {/* <img
+          src={Logo2}
+          alt="Logo"
+          className="h-[100px] w-100%  md:h-[300px]  md:w-100% md:mx-0 mb-0"
+          crossOrigin="anonymous"
+        /> */}
+
+
+
         <img
           src={Logo2}
           alt="Logo"
-          className="h-20 w-20  md:h-40  md:w-40 md:mx-0 mb-0"
+          className="h-20 w-20  md:h-28  md:w-28 lg:h-40  lg:w-40 md:mx-0 mb-0"
           crossOrigin="anonymous"
         />
         <div className="text-center md:text-left md:mx-4 mt-4 md:mt-0">
-          <h1 className="text-xl md:text-5xl text-red-600 font-bold">
+          <h1 className="text-xl md:text-3xl lg:text-5xl text-red-600 font-bold">
             विश्वकर्मा वंसज इंटरनेशनल फेडरेशन
           </h1>
-          <h2 className="text-red-600 text-sm font-bold md:text-2xl">
+          <h2 className="text-red-600 text-sm font-bold md:text-xl lg:text-2xl">
             Vishwakarma Vansaj International Federation
           </h2>
-          <p className=" text-blue-800 font-extrabold text-[8px] md:text-base mb-1">
+          <p className=" text-blue-800 font-extrabold text-[8px] md:text-sm lg:text-base mb-1">
             Registered: Under Section 8(1) (Ministry of Corporate Affairs, Govt. of India)
           </p>
-          <p className="md:text-base text-blue-800 font-extrabold text-[8px] mb-1">
+          <p className="md:text-sm lg:text-base text-blue-800 font-extrabold text-[8px] mb-1">
             Registered: Niti Aayog (Govt. of India); An ISO certified 9001: 2015 Org.
           </p>
           <p className="text-[12px] text-blue-900 font-extrabold md:text-lg">
@@ -54,7 +64,7 @@ function Header() {
         <img
           src={b}
           alt="Logo"
-          className="w-20 h-20 md:w-[10%] md:h-[10%] ml-4 mt-4 md:mt-0"
+          className="w-20 h-20 md:h-28  md:w-28 lg:h-40  lg:w-40 ml-4 mt-4 md:mt-0"
         />
       </div>
 
