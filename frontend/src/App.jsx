@@ -9,6 +9,8 @@ import Founder from "./components/pages/Founder";
 import Servey from "./components/pages/Servey";
 import DonateNow from "./components/pages/DonateNow";
 import DonationForm from "./components/pages/DonationForm";
+import Developer from "./components/pages/Developer"
+
 
 
 import Promotions from "./components/pages/Promotions";
@@ -93,6 +95,10 @@ const App = () => {
     {
       path: "/DonateNow",
       element: <DonateNow />,
+    },
+    {
+      path: "/Contact-Developer",
+      element: <Developer />,
     }
   
   ]);

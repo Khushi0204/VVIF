@@ -7,6 +7,7 @@ import yt from "../../assets/social/yt.jpeg";
 import whatsapp from "../../assets/social/whatsapp.jpeg";
 import Insta from "../../assets/social/insta.png";
 import X from "../../assets/social/X.png";
+import Visitors from "../HomeComponents/Visitors"
 
 
 import Pdf1 from "./pdf1";
@@ -23,6 +24,7 @@ export default function Footer() {
           <img src={rs} alt="rs" className="w-[390px] h-[90px] mb-2" />
           <img src={cd} alt="cd" className="w-[3900px] h-[90px] mb-2" />
           <img src={lh} alt="lh" className="w-[390px] h-[90px] mb-2" />
+          
         </div>
         <div className="">
           <h2 className="text-lg font-bold mb-4 ">Quick Links</h2>
@@ -62,8 +64,11 @@ export default function Footer() {
                Online Servey
               </a>
             </li>
+            <li><Visitors/></li>
           </ul>
+          
         </div>
+
         <div>
           <h2 className="text-base font-bold mb-3">
             Your any Suggestion/Query please Connect with Us
@@ -144,7 +149,7 @@ export default function Footer() {
       <div className="bg-primary/90 text-primary-foreground text-black  my-1 py-2 text-center">
         <p className="text-lg font-bold">
           {" "}
-          All rights reserved for VVIF &copy; 2024 designed by <a href="https://github.com/Khushi0204" className="text-white">Khushi Sharma</a>
+          All rights reserved for VVIF &copy; 2024 designed by <a href="/Contact-Developer" className="text-white">Khushi Sharma</a>
         </p>
       </div>
     </footer>

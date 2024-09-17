@@ -9,7 +9,6 @@ import Mission from "../HomeComponents/Missions"
 import "bootstrap/dist/css/bootstrap.min.css";
 import Slider2 from "../HomeComponents/Slider2"
 import DonateNow from "../pages/DonateNow";
-import Visitors from "../HomeComponents/Visitors"
 
 
 const Home = () => {
@@ -85,7 +84,7 @@ const Home = () => {
         </main>
             
             <Slider2/>
-            <Visitors/>
+            
         <Footer />
         
       </div>
