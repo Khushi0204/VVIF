@@ -4,7 +4,8 @@ const cors = require('cors');
 const Razorpay = require("razorpay");
 const crypto = require("crypto");
 
-
+const connectDB = require('./server/config/db');
+const authRoutes = require('./server/routes/auth');
 
 const express = require('express');
 const expressLayout = require('express-ejs-layouts');
@@ -17,22 +18,34 @@ const methodOverride = require('method-override');
 const flash = require('connect-flash');
 
 const session = require('express-session');
-const connectDB = require('./server/config/db');
 
 const app = express();
 const port = process.env.PORT || 3000;
 
 // Connect to Database  
+// connectDB();
+
+// app.use(express.urlencoded({ extended: true }));
+// app.use(express.json());
+// app.use(methodOverride('_method'));
+
+// app.use(cors({
+//   origin: 'http://vishwakarmavansajfederation.com',  // Replace with your frontend's URL
+// }));
+// app.use(bodyParser.json());
+
+// Connect to MongoDB
 connectDB();
 
-app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-app.use(methodOverride('_method'));
+app.use(cors());
 
-app.use(cors({
-  origin: 'http://vishwakarmavansajfederation.com',  // Replace with your frontend's URL
-}));
-app.use(bodyParser.json());
+app.use('/api', authRoutes);
+
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+});
 
 // Static Files
 app.use(express.static('public'));
@@ -106,9 +119,8 @@ app.post("/Donate/validate", async (req, res) => {
   });
 });
 
-const authRoutes = require('./server/routes/auth');
 app.use('/api', authRoutes);
 
-app.listen(port, ()=> {
+app.listen(port, () => {
   console.log(`App listeing on port ${port}`)
 });
