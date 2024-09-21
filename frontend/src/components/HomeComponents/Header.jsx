@@ -17,11 +17,11 @@ function Header() {
       <div className="bg-orange-400 rounded-lg shadow-lg h-10">
         <Navbar expand="lg" data-bs-theme="dark" className="p-0">
           <Container className="justify-end">
-            {/* <Nav>
+            <Nav>
               <Nav.Link href="/Login" className="font-bold px-3">
                 Login/SignUp
               </Nav.Link>
-            </Nav> */}
+            </Nav>
           </Container>
         </Navbar>
       </div>
