@@ -2,7 +2,36 @@ import React, { useState } from 'react';
 import axios from 'axios';
 
 const Login = () => {
-  const [formData, setFormData] = useState({ email: '', password: '' });
+  // const [formData, setFormData] = useState({ email: '', password: '' });
+  // const [error, setError] = useState('');
+  // const [success, setSuccess] = useState('');
+
+  // const handleChange = (e) => {
+  //   setFormData({
+  //     ...formData,
+  //     [e.target.name]: e.target.value,
+
+  //   });
+  // };
+
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
+
+  //   try {
+  //     const response = await axios.post('http://localhost:3000/api/Login', formData);
+  //     console.log('Login success:', response.data);
+  //     setSuccess('Login successful!');
+  //     setError('');
+  //   } catch (error) {
+  //     console.error('Login error:', error.response.data.message);
+  //     setError(error.response.data.message || 'Login failed');
+  //   }
+  // };
+
+  const [formData, setFormData] = useState({
+    email: '',
+    password: '',
+  });
   const [error, setError] = useState('');
   const [success, setSuccess] = useState('');
 
@@ -10,7 +39,6 @@ const Login = () => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,
-
     });
   };
 
@@ -18,12 +46,10 @@ const Login = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.post('http://localhost:3000/api/Login', formData);
-      console.log('Login success:', response.data);
-      setSuccess('Login successful!');
+      const response = await axios.post('http://localhost:5000/api/login', formData);
+      setSuccess(response.data.message);
       setError('');
     } catch (error) {
-      console.error('Login error:', error.response.data.message);
       setError(error.response.data.message || 'Login failed');
     }
   };
@@ -107,3 +133,62 @@ const Login = () => {
 };
 
 export default Login;
+
+// frontend/src/Login.js
+// import React, { useState } from 'react';
+// import axios from 'axios';
+
+// const Login = () => {
+// const [formData, setFormData] = useState({
+//     email: '',
+//     password: '',
+// });
+// const [error, setError] = useState('');
+// const [success, setSuccess] = useState('');
+
+// const handleChange = (e) => {
+//     setFormData({
+//         ...formData,
+//         [e.target.name]: e.target.value,
+//     });
+// };
+
+// const handleSubmit = async (e) => {
+//     e.preventDefault();
+
+//     try {
+//         const response = await axios.post('http://localhost:5000/api/login', formData);
+//         setSuccess(response.data.message);
+//         setError('');
+//     } catch (error) {
+//         setError(error.response.data.message || 'Login failed');
+//     }
+// };
+
+// return (
+//  <div>
+//   <h1>Login</h1>
+//   {error && <p>{error}</p>}
+//   {success && <p>{success}</p>}
+//   <form onSubmit={handleSubmit}>
+//     <input
+//       type="email"
+//       name="email"
+//       value={formData.email}
+//       onChange={handleChange}
+//       placeholder="Email"
+//     />
+//     <input
+//       type="password"
+//       name="password"
+//       value={formData.password}
+//       onChange={handleChange}
+//       placeholder="Password"
+//     />
+//     <button type="submit">Login</button>
+//   </form>
+// </div>
+//     );
+// }; 
+
+// export default Login;
