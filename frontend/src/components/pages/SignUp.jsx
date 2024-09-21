@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import { useNavigate } from "react-router-dom";
 
 const Signup = () => {
   // const [formData, setFormData] = useState({ Name: '', Email: '', Password: '', confirmPassword: '', Phone: '' });
@@ -41,6 +42,7 @@ const Signup = () => {
   });
   const [error, setError] = useState("");
   const [success, setSuccess] = useState("");
+  const navigate = useNavigate(); // Initialize useNavigate
 
   const handleChange = (e) => {
     setFormData({
@@ -63,8 +65,13 @@ const Signup = () => {
       );
       setSuccess(response.data.message);
       setError("");
-    } catch (error) {
-      setError(error.response.data.message || "Signup failed");
+      setFormData({ name: "", email: "", password: "", phone: "" }); // Reset form
+
+      // Redirect to login page after successful signup
+      navigate("/Login");
+    } catch (err) {
+      setError(err.response?.data.message || "Signup failed");
+      setSuccess("");
     }
   };
 

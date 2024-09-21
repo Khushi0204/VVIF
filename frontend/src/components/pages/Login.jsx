@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
   // const [formData, setFormData] = useState({ email: '', password: '' });
@@ -28,12 +29,14 @@ const Login = () => {
   //   }
   // };
 
+
   const [formData, setFormData] = useState({
     email: '',
     password: '',
   });
   const [error, setError] = useState('');
   const [success, setSuccess] = useState('');
+  const navigate = useNavigate(); // Initialize useNavigate
 
   const handleChange = (e) => {
     setFormData({
@@ -46,13 +49,17 @@ const Login = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.post('http://localhost:5000/api/login', formData);
-      setSuccess(response.data.message);
-      setError('');
-    } catch (error) {
-      setError(error.response.data.message || 'Login failed');
-    }
-  };
+            const response = await axios.post('http://localhost:5000/api/login', formData);
+            setSuccess(response.data.message);
+            setError('');
+
+            // Redirect to home page after successful login
+            navigate("/Dashboard");
+        } catch (error) {
+            setError(error.response.data.message || 'Login failed');
+            setSuccess('');
+        }
+    };
 
   return (
     <div className="min-h-screen bg-gray-900 text-gray-300 flex">
@@ -134,6 +141,8 @@ const Login = () => {
 
 export default Login;
 
+///////////////////////////////////////////////////////////////////////////////////////////////////////////2nd
+
 // frontend/src/Login.js
 // import React, { useState } from 'react';
 // import axios from 'axios';
@@ -190,5 +199,73 @@ export default Login;
 // </div>
 //     );
 // }; 
+
+// export default Login;
+
+////////////////////////////////////////////////////////////////////////////////3rd
+
+// import React, { useState } from 'react';
+// import axios from 'axios';
+// import { useNavigate } from 'react-router-dom';
+
+// const Login = () => {
+//     const [formData, setFormData] = useState({
+//         email: '',
+//         password: '',
+//     });
+//     const [error, setError] = useState('');
+//     const [success, setSuccess] = useState('');
+//     const navigate = useNavigate(); // Initialize useNavigate
+
+//     const handleChange = (e) => {
+//         setFormData({
+//             ...formData,
+//             [e.target.name]: e.target.value,
+//         });
+//     };
+
+//     const handleSubmit = async (e) => {
+//         e.preventDefault();
+
+//         try {
+//             const response = await axios.post('http://localhost:5000/api/login', formData);
+//             setSuccess(response.data.message);
+//             setError('');
+
+//             // Redirect to home page after successful login
+//             navigate('/home');
+//         } catch (error) {
+//             setError(error.response.data.message || 'Login failed');
+//             setSuccess('');
+//         }
+//     };
+
+//     return (
+//         <div>
+//             <h1>Login</h1>
+//             {error && <p>{error}</p>}
+//             {success && <p>{success}</p>}
+//             <form onSubmit={handleSubmit}>
+//                 <input
+//                     type="email"
+//                     name="email"
+//                     value={formData.email}
+//                     onChange={handleChange}
+//                     placeholder="Email"
+//                     required
+//                 />
+//                 <input
+//                     type="password"
+//                     name="password"
+//                     value={formData.password}
+//                     onChange={handleChange}
+//                     placeholder="Password"
+//                     required
+//                 />
+//                 <button type="submit">Login</button>
+//             </form>
+//         </div>
+//     );
+// };
 
 // export default Login;
