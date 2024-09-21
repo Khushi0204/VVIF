@@ -189,4 +189,88 @@ const Signup = () => {
   );
 };
 
+// const Signup = () => {
+//   const [formData, setFormData] = useState({
+//     name: "",
+//     email: "",
+//     password: "",
+//     confirmPassword: "",
+//     phone: "",
+//   });
+//   const [error, setError] = useState("");
+//   const [success, setSuccess] = useState("");
+
+//   const handleChange = (e) => {
+//     setFormData({
+//       ...formData,
+//       [e.target.name]: e.target.value,
+//     });
+//   };
+
+//   const handleSubmit = async (e) => {
+//     e.preventDefault();
+//     if (formData.password !== formData.confirmPassword) {
+//       setError("Passwords do not match");
+//       return;
+//     }
+
+//     try {
+//       const response = await axios.post(
+//         "http://localhost:5000/api/signup",
+//         formData
+//       );
+//       setSuccess(response.data.message);
+//       setError("");
+//     } catch (error) {
+//       setError(error.response.data.message || "Signup failed");
+//     }
+//   };
+
+//   return (
+//     <div className="App">
+//       <h1>Sign Up</h1>
+//       {error && <p>{error}</p>}
+//       {success && <p>{success}</p>}
+//       <form onSubmit={handleSubmit}>
+//         <input
+//           type="text"
+//           name="name"
+//           value={formData.name}
+//           onChange={handleChange}
+//           placeholder="Name"
+//         />
+//         <input
+//           type="email"
+//           name="email"
+//           value={formData.email}
+//           onChange={handleChange}
+//           placeholder="Email"
+//         />
+//         <input
+//           type="password"
+//           name="password"
+//           value={formData.password}
+//           onChange={handleChange}
+//           placeholder="Password"
+//         />
+//         <input
+//           type="password"
+//           name="confirmPassword"
+//           value={formData.confirmPassword}
+//           onChange={handleChange}
+//           placeholder="Confirm Password"
+//         />
+//         <input
+//           type="text"
+//           name="phone"
+//           value={formData.phone}
+//           onChange={handleChange}
+//           placeholder="Phone"
+//         />
+//         <button type="submit">Sign Up</button>
+//       </form>
+//     </div>
+//   );
+// };
+
 export default Signup;
