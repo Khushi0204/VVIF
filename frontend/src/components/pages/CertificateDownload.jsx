@@ -10,13 +10,13 @@ const App = () => {
   const downloadCertificate = () => {
     const link = document.createElement('a');
     link.href = B;  // Set the href to the imported PDF file
-    link.download = 'Brochure.pdf';  // Specify a name for the downloaded file
+    link.download = 'Certificate.pdf';  // Specify a name for the downloaded file
     link.click();
   };
 
   return (
     <div>
-      <Header/>
+     
     <div style={styles.container}>
       <h1 style={styles.heading}>Certificate Viewer</h1>
 
@@ -35,7 +35,7 @@ const App = () => {
         </button>
       </div>
     </div>
-    <Footer/>
+    
     </div>
   );
 };
