@@ -19,6 +19,7 @@ import Membership from "./components/pages/Membership";
 import Testimonial from "./components/pages/Testimonial";
 import PrabhuMahima from "./components/pages/PrabhuMahima";
 import Transaction from "./components/Generate/transaction";
+import CD from "./components/pages/CertificateDownload"
 import { Auth0Provider } from "@auth0/auth0-react";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
@@ -99,6 +100,10 @@ const App = () => {
     {
       path: "/Contact-Developer",
       element: <Developer />,
+    },
+    {
+      path: "/Certificate-Download",
+      element: <CD />,
     }
   
   ]);
