@@ -22,7 +22,7 @@ const PlanCard = ({ title, description, price, features, buttonText }) => (
         </li>
       ))}
     </ul>
-    <button className={buttonClasses}>{buttonText}</button>
+    <a href="/"><button className={buttonClasses}>{buttonText}</button></a>
   </div>
 );
 
@@ -30,32 +30,32 @@ const PlanCard = ({ title, description, price, features, buttonText }) => (
 const PricingPlans = () => {
   const plans = [
     {
-      title: "Basic Plan",
-      description: "Ideal for individuals starting out.",
-      price: "$10",
-      features: ["Access to basic features", "Email support"],
-      buttonText: "Choose Basic"
+      title: "Become member",
+      description: "Download id card and membership certificate",
+      price: "₹501",
+      features: ["Id card", "Certificate of membership"],
+      buttonText: "Pay"
     },
-    {
-      title: "Pro Plan",
-      description: "Perfect for professionals and small teams.",
-      price: "$30",
-      features: ["All Basic Plan features", "Priority email support", "Access to premium features"],
-      buttonText: "Choose Pro"
-    },
-    {
-      title: "Enterprise Plan",
-      description: "Best for large organizations and enterprises.",
-      price: "$100",
-      features: ["All Pro Plan features", "Dedicated account manager", "24/7 phone support"],
-      buttonText: "Choose Enterprise"
-    }
+    // {
+    //   title: "Pro Plan",
+    //   description: "Perfect for professionals and small teams.",
+    //   price: "$30",
+    //   features: ["All Basic Plan features", "Priority email support", "Access to premium features"],
+    //   buttonText: "Choose Pro"
+    // },
+    // {
+    //   title: "Enterprise Plan",
+    //   description: "Best for large organizations and enterprises.",
+    //   price: "$100",
+    //   features: ["All Pro Plan features", "Dedicated account manager", "24/7 phone support"],
+    //   buttonText: "Choose Enterprise"
+    // }
   ];
 
   return (
     <div className="min-h-screen bg-background text-foreground flex flex-col items-center py-12">
-      <h1 className="text-4xl font-bold mb-8">Choose Your Plan</h1>
-      <div className="flex flex-wrap justify-center gap-8">
+      {/* <h1 className="text-4xl font-bold mb-8">Choose Your Plan</h1> */}
+      <div className="flex flex-wrap justify-center gap-8 my-auto">
         {plans.map((plan, index) => (
           <PlanCard
             key={index}

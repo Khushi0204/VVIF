@@ -1,7 +1,7 @@
 import React from 'react';
 import { Worker, Viewer } from '@react-pdf-viewer/core'; // PDF viewer
 import '@react-pdf-viewer/core/lib/styles/index.css';    // PDF viewer styles
-import B from '../../assets/pdfs/B.pdf';  // Import the PDF file
+import B from '../../assets/pdfs/ID.pdf';  // Import the PDF file
 
 const App = () => {
   // Function to download the certificate
@@ -20,14 +20,14 @@ const App = () => {
         {/* PDF Viewer */}
         <div style={styles.pdfViewer}>
           <Worker workerUrl={`https://unpkg.com/pdfjs-dist@3.11.174/build/pdf.worker.min.js`}>
-            <Viewer fileUrl={B} defaultScale={1.2} /> {/* Adjust the scale here */}
+            <Viewer fileUrl={B} defaultScale={2.5} /> {/* Adjust the scale here */}
           </Worker>
         </div>
 
         {/* Action Buttons */}
         <div style={styles.actionButtons}>
           <button style={styles.button} onClick={downloadCertificate}>
-            Download Certificate
+            Download ID Card
           </button>
         </div>
       </div>
@@ -53,8 +53,8 @@ const styles = {
     marginBottom: '20px',
     border: '1px solid #ddd',
     padding: '0',   // No extra padding
-    height: '1000px',  // Increased height to fit the certificate
-    width: '1000px',   // Increased width to avoid cutting the border
+    height: '600px',  // Increased height to fit the certificate
+    width: '800px',   // Increased width to avoid cutting the border
     overflowY: 'scroll',  // Enable scrolling if needed
   },
   actionButtons: {

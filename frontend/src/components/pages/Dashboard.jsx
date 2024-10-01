@@ -31,13 +31,13 @@ export default function Widget() {
               <div className="bg-orange-200 text-secondary-foreground p-4 rounded-lg">
                 <h4 className="text-md font-semibold mb-2">Certificate</h4>
                 <p className="text-muted-foreground mb-4">Generate your membership certificate.</p>
-                <button className="bg-primary text-light text-primary-foreground hover:bg-primary/80 p-2 rounded-lg">Generate Certificate</button>
+                <a href="/Certificate-Download"><button className="bg-primary text-light text-primary-foreground hover:bg-primary/80 p-2 rounded-lg">Generate Certificate</button></a>
               </div>
               
               <div className="bg-orange-200 text-secondary-foreground p-4 rounded-lg">
                 <h4 className="text-md font-semibold mb-2">ID Card</h4>
                 <p className="text-muted-foreground mb-4">Generate your membership ID card.</p>
-                <button className="bg-primary text-light text-primary-foreground hover:bg-primary/80 p-2 rounded-lg">Generate ID Card</button>
+                <a href="ID-Download"><button className="bg-primary text-light text-primary-foreground hover:bg-primary/80 p-2 rounded-lg">Generate ID Card</button></a>
               </div>
             </div>
           </div>
