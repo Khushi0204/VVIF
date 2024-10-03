@@ -22,6 +22,19 @@ const session = require('express-session');
 const app = express();
 const port = process.env.PORT || 3000;
 
+// Connect to Database  
+// connectDB();
+
+// app.use(express.urlencoded({ extended: true }));
+// app.use(express.json());
+// app.use(methodOverride('_method'));
+
+// app.use(cors({
+//   origin: 'http://vishwakarmavansajfederation.com',  // Replace with your frontend's URL
+// }));
+// app.use(bodyParser.json());
+
+// Connect to MongoDB
 connectDB();
 
 app.use(express.json());

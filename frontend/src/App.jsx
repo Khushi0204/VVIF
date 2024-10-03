@@ -9,9 +9,7 @@ import Founder from "./components/pages/Founder";
 import Servey from "./components/pages/Servey";
 import DonateNow from "./components/pages/DonateNow";
 import DonationForm from "./components/pages/DonationForm";
-import Developer from "./components/pages/Developer"
-
-
+import Developer from "./components/pages/Developer";
 
 import Promotions from "./components/pages/Promotions";
 import Dashboard from "./components/pages/Dashboard";
@@ -19,8 +17,6 @@ import Membership from "./components/pages/Membership";
 import Testimonial from "./components/pages/Testimonial";
 import PrabhuMahima from "./components/pages/PrabhuMahima";
 import Transaction from "./components/Generate/transaction";
-import CD from "./components/pages/CertificateDownload"
-import ID from "./components/pages/IdDownload"
 import { Auth0Provider } from "@auth0/auth0-react";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
@@ -89,7 +85,7 @@ const App = () => {
       path: "/transaction",
       element: <Transaction />,
     },
-  
+
     {
       path: "/DonationForm",
       element: <DonationForm />,
@@ -102,15 +98,6 @@ const App = () => {
       path: "/Contact-Developer",
       element: <Developer />,
     },
-    {
-      path: "/Certificate-Download",
-      element: <CD />,
-    },
-    {
-      path: "/ID-Download",
-      element: <ID />,
-    },
-  
   ]);
 
   return (
